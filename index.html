@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IkFy Rmx Store</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090b12;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+    border-bottom: 1px solid #252d42;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #719aff;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero {
+    padding: 85px 0;
+    background: radial-gradient(circle at right, #202c55, transparent 60%);
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #719aff;
+}
+
+.hero p {
+    color: #aaa;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.features {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.features span {
+    background: #19233b;
+    color: #9cbaff;
+    padding: 9px 13px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(100deg, #347ce9, #8558e8);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 9px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 22px;
+}
+
+.section {
+    padding: 45px 0;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.desc {
+    color: #999;
+    margin-bottom: 25px;
+}
+
+.search {
+    width: 100%;
+    padding: 13px;
+    border-radius: 9px;
+    background: #141a29;
+    border: 1px solid #303b55;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: #141a29;
+    border: 1px solid #29334a;
+    padding: 17px;
+    border-radius: 15px;
+}
+
+.cover {
+    height: 145px;
+    background: linear-gradient(135deg, #263f83, #54317d);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 7px;
+}
+
+.card p {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.price {
+    color: #9cbaff !important;
+    font-weight: bold;
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.audio-controls input {
+    width: 100%;
+    accent-color: #719aff;
+}
+
+.play {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: none;
+    background: #30477c;
+    color: white;
+    cursor: pointer;
+}
+
+.buy {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: linear-gradient(100deg, #347ce9, #8558e8);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact {
+    background: linear-gradient(110deg, #17274c, #241b43);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0 50px;
+}
+
+.contact p {
+    color: #bbb;
+    margin-top: 10px;
+}
+
+footer {
+    border-top: 1px solid #252d42;
+    padding: 25px;
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+}
+
+@media(max-width:600px) {
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    nav {
+        display: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <div class="logo">♫ IkFy Rmx</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#music">Music</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <h1>
+        Welcome To<br>
+        <span>IkFy Rmx Store</span>
+    </h1>
+
+    <p>
+        Selamat datang di IkFy Rmx Music Store.
+        Temukan berbagai koleksi flm Remix dengan
+        kualitas audio premium dan proses pemesanan cepat.
+    </p>
+
+    <div class="features">
+        <span>✦ Kualitas Premium</span>
+        <span>✦ Proses Cepat</span>
+        <span>✦ Harga Terjangkau</span>
+    </div>
+
+    <a href="#music" class="btn">Jelajahi Musik →</a>
+
+</section>
+
+<section class="section" id="music">
+
+    <h2>Katalog Musik</h2>
+    <p class="desc">Koleksi FLM Remix.</p>
+
+    <input
+        type="text"
+        id="search"
+        class="search"
+        placeholder="Cari judul lagu..."
+        oninput="renderMusic()"
+    >
+
+    <div class="catalog" id="catalog"></div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>Butuh Bantuan?</h2>
+
+    <p>
+        Hubungi admin IkFy Rmx untuk informasi
+        pembelian dan pemesanan musik.
+    </p>
+
+    <a
+        href="https://wa.me/6285713281290"
+        class="btn"
+        target="_blank"
+    >
+        Chat WhatsApp →
+    </a>
+
+</section>
+
+</div>
+
+<footer>
+    © 2026 IkFy Rmx. All Rights Reserved.
+</footer>
+
+<script>
+
+// DATA LAGU
+// Ganti judul, genre, harga, dan file audio di sini.
+
+const songs = [
+
+    {
+        title: "Past Life Style FEXD",
+        genre: "IkFy Rmx",
+        price: "Rp70.000",
+        file: "C:\\Users\\HYPE AMD\\Music\\ARIANA GRANDE - PAST LIFE (REMIX).mp3"
+    },
+
+    {
+        title: "Bahtera Cinta Remake Stayhigh777",
+        genre: "Enaff",
+        price: "Rp10.000",
+        file: "C:\\Users\\HYPE AMD\\Music\\DJ Bahtera Cinta Enaff Viral 2∅26 Remake by IkFy Rmx.mpeg"
+    },
+
+    {
+        title: "DJ Breakbeat Collection 03",
+        genre: "Breakbeat",
+        price: "Rp15.000",
+        file: "C:\\Users\\HYPE AMD\\Music\\DJ Breakbeat Collection 03.mp3"
+    }
+
+];
+
+const catalog = document.getElementById("catalog");
+
+function renderMusic() {
+
+    const keyword = document
+        .getElementById("search")
+        .value.toLowerCase();
+
+    catalog.innerHTML = "";
+
+    const filtered = songs.filter(song =>
+        song.title.toLowerCase().includes(keyword) ||
+        song.genre.toLowerCase().includes(keyword)
+    );
+
+    if (filtered.length === 0) {
+        catalog.innerHTML = "<p>Musik tidak ditemukan.</p>";
+        return;
+    }
+
+    filtered.forEach(song => {
+
+        const card = document.createElement("div");
+        card.className = "card";
+
+        const cover = document.createElement("div");
+        cover.className = "cover";
+        cover.textContent = "♫";
+
+        const title = document.createElement("h3");
+        title.textContent = song.title;
+
+        const genre = document.createElement("p");
+        genre.textContent = song.genre;
+
+        const price = document.createElement("p");
+        price.className = "price";
+        price.textContent = song.price;
+
+        const audio = document.createElement("audio");
+        audio.src = song.file;
+        audio.preload = "metadata";
+
+        const controls = document.createElement("div");
+        controls.className = "audio-controls";
+
+        const play = document.createElement("button");
+        play.className = "play";
+        play.textContent = "▶";
+
+        const duration = document.createElement("span");
+        duration.textContent = "--:--";
+
+        audio.addEventListener("loadedmetadata", () => {
+            if (Number.isFinite(audio.duration)) {
+                const min = Math.floor(audio.duration / 60);
+                const sec = Math.floor(audio.duration % 60);
+
+                duration.textContent =
+                    `${min}:${String(sec).padStart(2, "0")}`;
+            }
+        });
+
+        const volumeIcon = document.createElement("span");
+        volumeIcon.textContent = "🔊";
+
+        const volume = document.createElement("input");
+        volume.type = "range";
+        volume.min = 0;
+        volume.max = 100;
+        volume.value = 75;
+
+        audio.volume = 0.75;
+
+        volume.addEventListener("input", () => {
+            audio.volume = volume.value / 100;
+        });
+
+        play.onclick = () => {
+
+            document.querySelectorAll("audio").forEach(other => {
+                if (other !== audio) {
+                    other.pause();
+                    other.currentTime = 0;
+                }
+            });
+
+            if (audio.paused) {
+                audio.play().then(() => {
+                    play.textContent = "Ⅱ";
+                }).catch(() => {
+                    alert("File audio tidak ditemukan!");
+                });
+            } else {
+                audio.pause();
+                play.textContent = "▶";
+            }
+
+        };
+
+        audio.addEventListener("ended", () => {
+            play.textContent = "▶";
+        });
+
+        audio.addEventListener("pause", () => {
+            play.textContent = "▶";
+        });
+
+        controls.append(
+            play,
+            volumeIcon,
+            volume,
+            duration
+        );
+
+        const buy = document.createElement("button");
+        buy.className = "buy";
+        buy.textContent = "🛒 Beli via WhatsApp";
+
+        buy.onclick = () => {
+
+            const message =
+                `Halo bg IkFy Rmx, aku nak beli ${song.title}. Mohon informasi pembayaran.`;
+
+            window.open(
+                "https://wa.me/6285713281290?text=" +
+                encodeURIComponent(message),
+                "_blank"
+            );
+
+        };
+
+        card.append(
+            cover,
+            title,
+            genre,
+            price,
+            controls,
+            audio,
+            buy
+        );
+
+        catalog.appendChild(card);
+
+    });
+
+}
+
+renderMusic();
+
+</script>
+
+</body>
+</html>
