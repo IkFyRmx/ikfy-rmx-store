@@ -158,6 +158,18 @@ nav a:hover {
     font-weight: bold;
 }
 
+.sold {
+    display: inline-block;
+    color: #8fe0b0 !important;
+    background: #173528;
+    border: 1px solid #28583f;
+    padding: 5px 9px;
+    border-radius: 7px;
+    font-size: 12px !important;
+    margin-top: 2px;
+    margin-bottom: 5px !important;
+}
+
 .audio-controls {
     display: flex;
     align-items: center;
@@ -316,6 +328,7 @@ const songs = [
         title: "Past Life Style FEXD",
         genre: "IkFy Rmx",
         price: "Rp70.000",
+        sold: 0, // Ubah angka ini sesuai jumlah penjualan
         file: "audio\\past life fexd.mp3"
     },
 
@@ -323,6 +336,7 @@ const songs = [
         title: "Bahtera Cinta Remake Stayhigh777",
         genre: "Enaff",
         price: "Rp50.000",
+        sold: 0, // Ubah angka ini sesuai jumlah penjualan
         file: "audio\\bahtera cinta enaff.mp3"
     },
 
@@ -330,6 +344,7 @@ const songs = [
         title: "DJ Dingin Keringetan Style JJ Old",
         genre: "Bootleg",
         price: "Rp45.000",
+        sold: 0, // Ubah angka ini sesuai jumlah penjualan
         file: "audio\\dingin keringetan old.mp3"
     }
 
@@ -373,6 +388,10 @@ function renderMusic() {
         const price = document.createElement("p");
         price.className = "price";
         price.textContent = song.price;
+
+        const sold = document.createElement("p");
+        sold.className = "sold";
+        sold.textContent = `Terjual ${song.sold}x`;
 
         const audio = document.createElement("audio");
         audio.src = song.file;
@@ -472,6 +491,7 @@ function renderMusic() {
             title,
             genre,
             price,
+            sold,
             controls,
             audio,
             buy
